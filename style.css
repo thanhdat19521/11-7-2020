@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    background: url("https://playpen.createjs.com/CORS/edmonton-fw.jpg");
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+canvas {
+    background-color: transparent;
+}
+
+.credit {
+    color: white;
+    display: inline-block;
+    width: 120px;
+    opacity: 0.8;
+    font-size: 0.8rem;
+    pointer-events: auto;
+}
+
+.credit a,
+.credit a:link,
+.credit a:active,
+.credit a:visited {
+    color: white;
+}
