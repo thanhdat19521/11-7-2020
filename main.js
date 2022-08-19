@@ -105,7 +105,7 @@ function firework(fw, hue) {
 }
 
 function textwork(fw, hue) {
-    var size = Math.random() * 60 + 60;
+    var size = Math.random() * 60 + 20;
     var t = new createjs.Text(getWord(), "bold " + size + "px Arial", "white")
         .set({ alpha: 0.1, textAlign: "center" }),
         b = t.getBounds();
@@ -133,7 +133,7 @@ function textwork(fw, hue) {
             alpha: 1.5, scale: Math.random() * 0.5 + 0.75,
             gravity: 0.01 + Math.random() / 60,
             decay: 0.992,
-            speedDecay: 1
+            speedDecay: 0.001
         });
         p.gotoAndPlay(hue == -1 ? 0 : "star-" + hue);
         stage.addChild(p);
@@ -228,5 +228,5 @@ function returnStar(star) {
 autoFW();
 function autoFW() {
     createFW();
-    setTimeout(autoFW, Math.random() * 500 + 300);
+    setTimeout(autoFW, Math.random() * 1000 + 1000);
 }
