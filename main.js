@@ -198,7 +198,7 @@ function handleResize(event) {
     stage.update();
 }
 
-var words = ["Yêu Bạn Rất nhiều", "Anh Yêu Em", "Nhớ Em Rất Nhiều", "❤ ❤ ❤ ❤ ❤", "Thương Em Yêu Nhiều", "11/07/20"];
+var words = ["Yêu Bạn Rất nhiều", "Anh Yêu Em", "Nhớ Em Rất Nhiều", "❤ ❤ ❤ ❤ ❤", "Thương Em Yêu Nhiều", "11/07/2020"];
 if (params.words) {
     words = params.words.split(",");
 }
